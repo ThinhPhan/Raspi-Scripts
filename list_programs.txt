@@ -1,0 +1,11 @@
+wolfram-engine
+scratch
+libreoffice*
+bluej
+greenfoot
+minecraft-pi
+supercollider*
+netsurf*
+sonic-pi
+penguinspuzzle
+raspberrypi-artwork
