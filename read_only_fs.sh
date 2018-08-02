@@ -4,6 +4,7 @@
 # petr.io/en/blog/2015/11/09/read-only-raspberry-pi-with-jessie
 # hallard.me/raspberry-pi-read-only
 # k3a.me/how-to-make-raspberrypi-truly-read-only-reliable-and-trouble-free
+# -------------------------------------------------------------------------
 
 if [ $(id -u) -ne 0 ]; then
 	echo "Installer must be run as root."

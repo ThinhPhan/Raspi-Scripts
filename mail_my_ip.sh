@@ -1,8 +1,10 @@
 #!/bin/bash
-#
+
+# Credit:
 # Script to email when the IP address changes
 # drware@thewares.net
-#
+# -------------------------------------------------------------------------
+
 RECIPIENT="phanquocthinh@gmail.com"
 
 if [ -f /tmp/ip.tmp ];
