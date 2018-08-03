@@ -1,8 +1,11 @@
 #!/bin/bash
+
+# -------------------------------------------------------------------------
 # Date: 07.01.2017
 # Version: 1.0
 # Author: Vincent Phan
-# Strip down Raspian to Server Edition - Headless
+# Purpose: Strip down Raspian Desktop to Server Edition - Headless
+# -------------------------------------------------------------------------
 
 rm -rf python_games
 rm -rf Public Videos Music Pictures

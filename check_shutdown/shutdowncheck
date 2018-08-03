@@ -1,0 +1,17 @@
+#!/bin/bash
+
+FLAG=/etc/poweroff-flag-file
+
+if [ "$1" = "start" ]; then
+  if [ -f "$FLAG" ]; then
+    echo "Detected impropert shutdown" >&2
+    (
+    echo 'Detected improper shutdown'
+    stat $FLAG | awk '/Modify/ {$1="Power On:"; print}'
+    ) | mail -s 'Improper shutdown' you@example.com
+  fi
+
+  date >  "$FLAG"
+elif [ "$1" = "stop" ]; then
+  rm -f $FLAG
+fi

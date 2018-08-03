@@ -1,0 +1,12 @@
+[Unit]
+Description=Detect if system was shut down cleanly
+After=network.target
+
+[Service]
+Type=oneshot
+RemainAfterExit=yes
+ExecStart=/bin/powercheck start
+ExecStop=/bin/powercheck stop
+
+[Install]
+WantedBy=multi-user.target

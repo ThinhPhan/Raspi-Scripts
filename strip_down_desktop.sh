@@ -1,15 +1,21 @@
 #!/bin/bash
+
+# -------------------------------------------------------------------------
 # Date: 07.01.2017
 # Version: 1.0
 # Author: Vincent Phan
 # Strip down Raspian to Desktop Edition
+# -------------------------------------------------------------------------
 
 list_programs=list_programs.txt
 
 
 rm -rf Public Videos Music Pictures Desktop python_games
 
-#  Mathematica (460MB) and scratch (67MB), Wolfram (658MB), Libreoffice (253MB)
+# Mathematica (460MB)
+# Scratch (67MB)
+# Wolfram (658MB)
+# Libreoffice (253MB)
 sudo apt-get remove --purge $(cat $list_programs) -y
 
 # purge - remove packages & config files
@@ -21,6 +27,7 @@ sudo localepurge
 sudo apt-get autoremove -y
 sudo apt-get update -y
 sudo apt-get upgrade -y
+
 # Update firmwares
 sudo rpi-update
 
