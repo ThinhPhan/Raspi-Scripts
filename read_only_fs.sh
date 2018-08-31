@@ -6,6 +6,8 @@
 # k3a.me/how-to-make-raspberrypi-truly-read-only-reliable-and-trouble-free
 # -------------------------------------------------------------------------
 
+#TODO: Testing this script
+
 if [ $(id -u) -ne 0 ]; then
 	echo "Installer must be run as root."
 	echo "Try 'sudo bash $0'"

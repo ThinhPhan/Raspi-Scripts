@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# Script to turn on display
+# Script to turn on/off display
 #
 
 # Set display so that script will effect screen on frame

@@ -1,8 +1,8 @@
-programs=list_programs.txt
+PROGRAMS=list_programs.txt
 
 set -f
 IFS='
 '
-for name in $(cat $programs) ; do
+for name in $(cat $PROGRAMS) ; do
   echo $name
 done
