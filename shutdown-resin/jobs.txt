@@ -3,8 +3,8 @@
 
 # run shutdown at 22:00 everyday 
 #* /5 * * * shutdown -h now > /proc/1/fd/1
-* /5 * * * /bin/sh /home/pi/auto_shutdown.sh
+@reboot /sbin/shutdown -h 19:30
 
 # run Hello every 00:02 minutes
 # https://crontab.guru/every-5-minutes
-* /1 * * * echo 'Hi' > /var/log/cron.log
+* /1 * * * echo 'Hi' >> /var/log/cron.log

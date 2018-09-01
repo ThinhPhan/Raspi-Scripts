@@ -1,5 +1,5 @@
-#!/bin/sh
+#!/bin/bash
 
 echo "Prepare shutdown at $(date)"
 echo "Shutdown at $(date)" >> /var/log/shutdown.log
-sudo shutdown -H now
+sudo sbin/shutdown -H now

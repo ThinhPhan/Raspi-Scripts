@@ -9,6 +9,6 @@ sudo apt-get clean && rm -rf /var/lib/apt/lists/*
 
 cp auto_shutdown.sh /home/pi/
 
-crontab jobs.txt
+sudo crontab jobs.txt
 
 #sh app.sh
