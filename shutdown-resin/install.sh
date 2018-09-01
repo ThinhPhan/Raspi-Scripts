@@ -7,6 +7,8 @@
 sudo apt-get update && sudo apt-get install -y cron procmail && \
 sudo apt-get clean && rm -rf /var/lib/apt/lists/*
 
+cp auto_shutdown.sh /home/pi/
+
 crontab jobs.txt
 
-sh app.sh
+#sh app.sh
